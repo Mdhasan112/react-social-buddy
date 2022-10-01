@@ -9,6 +9,7 @@ import {
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Dashboard from './components/Dashboard/Dashboard';
+import PostDetail from './components/PostDetail/PostDetail';
 
 function App() {
   return (
@@ -45,6 +46,9 @@ function App() {
           </Route>
           <Route path="/dashboard">
             <Dashboard />
+          </Route>
+          <Route path="/post/:id">
+            <PostDetail></PostDetail>
           </Route>
         </Switch>
       </div>
